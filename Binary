@@ -1,0 +1,22 @@
+package helloworld;
+import java.util.Scanner;
+public class New {
+	public static void main(String[] args) {
+		Scanner num=new Scanner(System.in);
+		System.out.println("enter the binary code:");
+		int number=num.nextInt();
+		int i=0,n,sum=0;
+		while(number>0) {
+			n=number%10;
+			sum+=n*(int)Math.pow(2, i);
+			i++;
+			number=number/10;
+			}
+		System.out.println("Decimal number:"+sum);
+		}
+		
+
+	}
+
+
+
